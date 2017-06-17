@@ -1,13 +1,18 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Web.Configuration;
+
 namespace ModelDemo.Models
 {
     public class Catagory
     {
-        public bool Schedule { get; set; }
-        public bool Cost { get; set; }
-        public bool Scope { get; set; }
-        public bool Requirements { get; set; }
-        public bool Testing { get; set; }
-        public bool Resource { get; set; }
+        [Key]
+        public int Id { get; set; }
 
+        [Display(Name = "Catagory")]
+        public string Name { get; set; }
+
+        [ForeignKey("ChangeProject")]
+        public int ChangeProjectId { get; set; }
     }
 }

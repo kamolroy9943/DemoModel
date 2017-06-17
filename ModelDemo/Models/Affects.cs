@@ -1,12 +1,17 @@
-﻿namespace ModelDemo.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace ModelDemo.Models
 {
     public class Affects
     {
-        public bool CorrectiveAction { get; set; }
-        public bool PreventiveAction { get; set; }
-        public bool DefectRepair { get; set; }
-        public bool Updates { get; set; }
-        public bool Others { get; set; }
+        [Key]
+        public int Id { get; set; }
 
+        [Display(Name = "Affect")]
+        public string Name { get; set; }
+
+        [ForeignKey("ChangeProject")]
+        public int ChangeProjectId { get; set; }
     }
 }
