@@ -3,15 +3,17 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ModelDemo.Models
 {
-    public class Affects
+    public class Affect
     {
         [Key]
-        public int Id { get; set; }
+        public int AffectId { get; set; }
 
         [Display(Name = "Affect")]
         public string Name { get; set; }
 
-        [ForeignKey("ChangeProject")]
-        public int ChangeProjectId { get; set; }
+        public int ProjectId { get; set; }
+        
+        public ChangeProject Project { get; set; }
+
     }
 }

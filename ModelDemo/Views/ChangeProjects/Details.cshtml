@@ -1,0 +1,114 @@
+﻿@model ModelDemo.Models.ChangeProject
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ChangeProject</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjectName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangeRequestor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangeRequestor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangeNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangeNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RequestedChange)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequestedChange)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangeReason)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangeReason)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlternativeConsideration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlternativeConsideration)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TechnicalChanges)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TechnicalChanges)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RiskConsiderationn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RiskConsiderationn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReasourceCost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReasourceCost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImplementationQuality)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImplementationQuality)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Justification)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Justification)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProjectId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

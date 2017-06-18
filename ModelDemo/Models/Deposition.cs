@@ -1,19 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Web.Configuration;
+using System.Linq;
+using System.Web;
 
 namespace ModelDemo.Models
 {
-    public class Catagory
+    public class Deposition
     {
         [Key]
-        public int CatagoryId { get; set; }
-
-        [Display(Name = "Catagory")]
+        public int DepositionId { get; set; }
         public string Name { get; set; }
 
         public int ProjectId { get; set; }
-
+        
         public ChangeProject Project { get; set; }
+
+        
+
     }
 }

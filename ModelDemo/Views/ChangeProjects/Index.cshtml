@@ -1,0 +1,99 @@
+﻿@model IEnumerable<ModelDemo.Models.ChangeProject>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProjectName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChangeRequestor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChangeNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RequestedChange)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChangeReason)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AlternativeConsideration)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TechnicalChanges)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RiskConsiderationn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReasourceCost)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImplementationQuality)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Justification)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProjectName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChangeRequestor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChangeNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RequestedChange)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChangeReason)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlternativeConsideration)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TechnicalChanges)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RiskConsiderationn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReasourceCost)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImplementationQuality)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Justification)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ProjectId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ProjectId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ProjectId })
+        </td>
+    </tr>
+}
+
+</table>

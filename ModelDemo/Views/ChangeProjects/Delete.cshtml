@@ -1,0 +1,120 @@
+﻿@model ModelDemo.Models.ChangeProject
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>ChangeProject</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjectName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangeRequestor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangeRequestor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangeNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangeNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RequestedChange)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequestedChange)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangeReason)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangeReason)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlternativeConsideration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlternativeConsideration)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TechnicalChanges)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TechnicalChanges)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RiskConsiderationn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RiskConsiderationn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReasourceCost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReasourceCost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImplementationQuality)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImplementationQuality)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Justification)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Justification)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

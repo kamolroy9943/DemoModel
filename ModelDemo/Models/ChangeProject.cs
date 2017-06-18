@@ -12,11 +12,11 @@ namespace ModelDemo.Models
         public int ProjectId { get; set; }
 
         [Required]
-        [Display(Name = "Project Name:")]
+        [Display(Name = "Project Name")]
         public string ProjectName { get; set; }
 
         [Required]
-        [Display(Name = "Date:")]
+        [Display(Name = "Date")]
         public DateTime Date { get; set; }
 
         [Required]
@@ -24,48 +24,48 @@ namespace ModelDemo.Models
         public string ChangeRequestor { get; set; }
 
         [Required]
-        [Display(Name = "Change No:")]
+        [Display(Name = "Change No")]
         public string ChangeNo { get; set; }
 
         [Required]
-        [Display(Name = "Catagory:")]
+        [Display(Name = "Catagory")]
         public ICollection<Catagory> ChangeCatagorys { get; set; }
 
         [Required]
         [Display(Name = "Affect")]
-        public ICollection<Affects> ChangeAffects { get; set; }
+        public ICollection<Affect> ChangeAffects { get; set; }
 
         [Required]
         [Display(Name = "Requested Change:")]
         public string RequestedChange { get; set; }
 
         [Required]
-        [Display(Name = "Change Reason:")]
+        [Display(Name = "Change Reason")]
         public string ChangeReason { get; set; }
 
         [Required]
-        [Display(Name = "Alternative Consideration:")]
+        [Display(Name = "Consideration")]
         public string AlternativeConsideration { get; set; }
 
         [Required]
-        [Display(Name = "Technical Changes:")]
+        [Display(Name = "Technical Changes")]
         public string TechnicalChanges { get; set; }
 
         [Required]
-        [Display(Name = "Risk Considerationn:")]
+        [Display(Name = "Risk Considerationn")]
         public string RiskConsiderationn { get; set; }
 
         [Required]
-        [Display(Name = "Resource Cost:")]
+        [Display(Name = "Resource Cost")]
         public double ReasourceCost { get; set; }
 
         [Required]
-        [Display(Name = "Implementation Quality:")]
+        [Display(Name = "Implementation Quality")]
         public string ImplementationQuality { get; set; }
 
         [Required]
         [Display(Name = "Deposition")]
-        public bool Deposition { get; set; }
+        public ICollection<Deposition> Depositions { get; set; }
 
         [Required]
         [Display(Name = "Justification")]
