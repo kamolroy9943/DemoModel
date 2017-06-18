@@ -17,6 +17,7 @@ namespace ModelDemo.Models
 
         [Required]
         [Display(Name = "Date")]
+        [DataType(DataType.Date)]
         public DateTime Date { get; set; }
 
         [Required]

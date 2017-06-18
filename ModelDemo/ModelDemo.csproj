@@ -157,6 +157,10 @@
     <Compile Include="Migrations\201706180805418_Initial.Designer.cs">
       <DependentUpon>201706180805418_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706180828159_addDateAnotation.cs" />
+    <Compile Include="Migrations\201706180828159_addDateAnotation.Designer.cs">
+      <DependentUpon>201706180828159_addDateAnotation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Affect.cs" />
     <Compile Include="Models\Catagory.cs" />
@@ -191,6 +195,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201706180805418_Initial.resx">
       <DependentUpon>201706180805418_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706180828159_addDateAnotation.resx">
+      <DependentUpon>201706180828159_addDateAnotation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
